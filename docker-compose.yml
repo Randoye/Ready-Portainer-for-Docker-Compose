@@ -1,0 +1,12 @@
+version: "3"
+services: 
+    portainer: 
+        image: portainer/portainer-ce
+        container_name: Portainer
+        hostname: portainer
+        volumes: 
+            - /home/ec2-user/docer/portainer:/data
+        ports:
+            - 8000:8000
+            - 10000:9000
+        restart: unless-stopped
