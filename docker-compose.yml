@@ -5,7 +5,7 @@ services:
         container_name: Portainer
         hostname: portainer
         volumes: 
-            - /home/ec2-user/docer/portainer:/data
+            - /home/ec2-user/docker/portainer:/data
         ports:
             - 8000:8000
             - 10000:9000
